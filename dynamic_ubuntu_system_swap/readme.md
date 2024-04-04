@@ -4,11 +4,11 @@ Step1: Create swap image, you can locate this file anywhere in your harddisks. F
 >> dd if=/dev/zero of=/home/my_username/.extraswap/swapfile.img bs=1024 count=1M
 
 Step2: Bake the swap file
->> mkswap /media/fasthdd/swapfile.img
+>> mkswap /home/my_username/.extraswap/swapfile.img
 
 Step3: Bring up on boot (permanently and it is optional)
 >> \# Add this line to /etc/fstab  
->> /media/fasthdd/swapfile.img swap swap sw 0 0
+>> /home/my_username/.extraswap/swapfile.img swap swap sw 0 0
 
 Step4: Activate  
 >> sudo swapon /home/my_username/.extraswap/swapfile.img
