@@ -12,7 +12,7 @@ Step 2: Download the version tar package and extract it
 Step 3: Move to the extracted folder and run configuration  
 ---
   > cd Python-3.9.0  
-  > /configure
+  > ./configure
 ---
 Step 4: Install Python 3.9 alongside your current Python installation (if any)
 ---
@@ -24,7 +24,8 @@ Step 5: Verify your installation
 ---
 Step 6: Make the installed python as the default version in the system (Optional):  
 ---
-  - Using symbolic link mapping the installed python executive file to the default command. Syntax of the command creating symbolic link: ln -s path/to/executable_file path/to/default_command  
+  - Using symbolic link mapping the installed python executive file to the default command. Syntax of the command creating symbolic link:
+    > ln -s path/to/executable_file path/to/default_command  
   - Using alias: create an alias in ~/.bashrc file. For example, ```alias python3='/usr/bin/python3.9'```  
 ---
 Refs: 
